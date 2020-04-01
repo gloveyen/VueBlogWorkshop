@@ -1,4 +1,5 @@
 # VueBlogWorkshop<br>
+簡報：https://drive.google.com/file/d/1x1BJTxPRgqF5Y86rjZ4tzdqFLit___pg/view?usp=sharing<br>
 
 ### Vue CDN
 `<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>`<br>
