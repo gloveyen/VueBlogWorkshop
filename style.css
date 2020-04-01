@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500|Open+Sans|Sulphur+Point&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #212529;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loading span {
+  font-size: 2rem;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw - 2rem);
+  height: 56px;
+  padding: 0 1rem;
+  background-color: rgb(53, 53, 53);
+  color: #fff;
+  top: 0;
+}
+
+header div a {
+  display: inline-block;
+  padding: 10px 1rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+  text-decoration-line: none;
+  color: #fff;
+}
+
+header div a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+header #title a {
+  font-family: "Sulphur Point", sans-serif;
+  color: #fff;
+  margin: 0;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100vw;
+  padding-top: 4rem;
+}
+
+.home-view-container {
+  padding-top: 4rem;
+  display: flex;
+}
+
+.side-bar-component-container {
+  width: 22vw;
+  list-style: none;
+  margin-top: 1rem;
+  background-color: #ddd;
+  border-radius: 16px;
+  padding-top: 1rem;
+}
+
+.side-bar-component-container h2 {
+  width: 100%;
+  display: inline-block;
+  line-height: 1.5rem;
+  text-align: left;
+  text-indent: 1rem;
+}
+
+.side-bar-component-container hr {
+  margin: 5px;
+  margin-bottom: 1rem;
+}
+
+.side-bar-component-container ul {
+  padding: 0 2rem;
+}
+
+.side-bar-component-container ul li {
+  margin: 5px 0;
+  transition: 0.3s;
+  cursor: pointer;
+  text-indent: 0.5rem;
+  padding-right: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.side-bar-component-container ul li:hover {
+  text-decoration-line: underline;
+}
+
+.home-view-container article {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #ddd;
+  margin: 1rem;
+  height: 160px;
+  border-radius: 16px;
+  width: 70vw;
+}
+
+.home-view-container h2 {
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.home-view-container h2:hover {
+  opacity: 0.6;
+}
+
+.home-view-container i {
+  color: rgb(143, 143, 143);
+  margin-bottom: 8px;
+}
+
+.article-view-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.article-view-container h2 {
+  margin-bottom: 1rem;
+}
+
+.article-view-container i {
+  margin-bottom: 1rem;
+}
+
+.article-view-container span {
+  text-align: left;
+}
+
+.admin-view-container {
+  display: flex;
+  justify-content: center;
+}
+
+.admin-view-container ul {
+  width: 100vw;
+}
+
+.admin-view-container ul li {
+  display: flex;
+  width: 100%;
+}
+
+.admin-view-container ul li div {
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.admin-view-container ul li[name="admin-header"] {
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+  line-height: 40px;
+}
+
+.admin-view-container ul li div:first-child {
+  width: 25%;
+}
+
+.admin-view-container ul li div:nth-child(2) {
+  width: 10%;
+}
+
+.admin-view-container ul li div:nth-child(3) {
+  width: 50%;
+}
+
+.admin-view-container ul li div:nth-child(4) {
+  width: 15%;
+}
+
+.admin-view-container ul li[name="admin-body"]:hover {
+  background-color: rgb(233, 233, 233);
+}
+
+.admin-view-container ul li div button {
+  font-family: "Noto Sans TC", sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(92, 92, 92);
+  color: #fff;
+  cursor: pointer;
+}
+
+.admin-view-container ul li div button:hover {
+  opacity: 0.6;
+}
+
+.add-view-container form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.add-view-container form label {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.add-view-container form label div {
+  width: 100%;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.add-view-container form label input {
+  font-family: "Noto Sans TC", sans-serif;
+  width: 100%;
+  height: 2rem;
+  font-size: 1.2rem;
+  text-indent: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.add-view-container form label textarea {
+  font-family: "Noto Sans TC", sans-serif;
+  width: calc(100% - 1rem);
+  height: 360px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+  resize: none;
+  line-height: 2rem;
+}
+
+.add-view-container form button {
+  height: 2rem;
+  border-radius: 4px;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.add-view-container form button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.add-view-container form button[name="submit"] {
+  background-color: #73bdb6;
+  margin-bottom: 0.5rem;
+}
+
+.add-view-container form button[name="reset"] {
+  background-color: rgb(212, 124, 124);
+}
+
+.not-found-view-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-view-container b {
+  font-size: 80px;
+  margin-bottom: 1rem;
+}
+
+.not-found-view-container button {
+  padding: 6px 1rem;
+  border-radius: 4px;
+  background-color: rgb(44, 102, 141);
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.not-found-view-container button:hover {
+  opacity: 0.6;
+}

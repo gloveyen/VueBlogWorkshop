@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.1.3/vue-router.js"></script>
+    <script src="https://unpkg.com/vuex@2.0.0"></script>
+    <script src="./store.js"></script>
+    <script src="./components/SideBar.js"></script>
+    <script src="./Views/Home.js"></script>
+    <script src="./Views/Admin.js"></script>
+    <script src="./Views/Article.js"></script>
+    <script src="./Views/Add.js"></script>
+    <script src="./Views/NotFound.js"></script>
+    <script src="./router.js"></script>
+    <title>GloveCoding</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h2 id="title">
+          <router-link to="/">
+            GloveCoding
+          </router-link>
+        </h2>
+
+        <div>
+          <router-link to="/">home</router-link>
+          <router-link to="/admin">admin</router-link>
+          <router-link :to="{name:'admin-add'}">new</router-link>
+        </div>
+      </header>
+
+      <router-view v-if="!loading"></router-view>
+      <div class="loading" v-else>
+        <img src="assets/Discuss-1s-200px.gif" alt="loading" />
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
